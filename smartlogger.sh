@@ -90,8 +90,9 @@ echo "Запись в основной файл через" $(($COUNTER/1000)).$
 echo "Число строк в основном файле файле:"
 wc -l $OUTPUT.log
 echo >> $TIME_OUTPUT
-echo >> $TIME_OUTPUT
-date +"%T.%N" >> $TIME_OUTPUT
+echo -------------------------------------------------- >> $TIME_OUTPUT
+date +"%Y/%m/%d %T.%N" >> $TIME_OUTPUT
+echo -------------------------------------------------- >> $TIME_OUTPUT
 echo >> $TIME_OUTPUT
 $COMMAND >> $TIME_OUTPUT
 echo "Число строк в временном файле:"
